@@ -1,0 +1,16 @@
+.banner {
+  background-color: #CED0CA;
+}
+
+.banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.banner ul li {
+  color: #FCFCF9;
+  padding: 0.25em 1em;
+}
+/*# sourceMappingURL=Banner.module.css.map */

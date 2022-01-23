@@ -1,0 +1,17 @@
+$primary-100: #FCFCF9;
+$primary-200: #CED0CA;
+$primary-400: #F5B416;
+$primary-800: #5C5C70;
+
+.banner {
+    background-color: $primary-200;
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+        color: $primary-100;
+        padding: 0.25em 1em;
+    }
+  }
+}
