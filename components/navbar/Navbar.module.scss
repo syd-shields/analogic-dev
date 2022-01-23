@@ -1,0 +1,100 @@
+$primary-100: #FCFCF9;
+$primary-200: #CED0CA;
+$primary-400: #F5B416;
+$primary-800: #5C5C70;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 1.6em;
+        color: $primary-800;
+    }
+    .searchbar {
+        width: 40%;
+        height: 2em;
+    }
+
+    button {
+        padding: 0.5em;
+        border-radius: 3px;
+        height: 2em;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .sellGear {
+        background-color: $primary-800;
+        color: $primary-100;
+        border: none;
+        width: 10em;
+    }
+
+    .myCollection {
+        background-color: $primary-400;
+        color: $primary-100;
+        border: none;
+        width: 10em;
+    }
+
+    .login {
+        background-color: transparent;
+        border: none;
+    }
+
+    .signup {
+        background-color: transparent;
+        width: 6em;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .navbar {
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-columns: repeat(5 1fr);
+
+    .searchbar {
+        grid-column: 1 / span 5;
+        width: 100%;
+    }
+
+    button {
+        display: none;
+        padding: 0.5em;
+    }
+
+    .sellGear {
+        background-color: $primary-800;
+        color: $primary-100;
+    }
+
+    .myCollection {
+        background-color: $primary-400;
+        color: $primary-100;
+    }
+
+    .login {
+        background-color: transparent;
+        border: none;
+    }
+
+    .signup {
+        background-color: transparent;
+    }
+
+    .menu {
+        display: block;
+        grid-column: 4 / span 2;
+        grid-row: 1 / span 1;
+    }
+}
+}
